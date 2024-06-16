@@ -1,0 +1,110 @@
+﻿@{
+    ViewData["Title"] = "Política de Privacidad - AppLazaro";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+            <p class="lead text-center">
+                En AppLazaro, valoramos tu privacidad y estamos comprometidos a proteger tu información personal.
+            </p>
+
+            <hr />
+
+            <section class="mb-4">
+                <h2>Introducción</h2>
+                <p>
+                    En AppLazaro, valoramos tu privacidad y estamos comprometidos a proteger tu información personal. Esta política de privacidad describe los tipos de información que recopilamos, cómo la utilizamos y las medidas que tomamos para garantizar su seguridad.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Recopilación de Información</h2>
+                <p>
+                    Recopilamos información personal de diversas maneras, incluyendo cuando te registras en nuestro sitio, realizas un pedido, te suscribes a nuestro boletín o rellenas un formulario. La información recopilada puede incluir tu nombre, dirección de correo electrónico, dirección postal y número de teléfono.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Uso de la Información</h2>
+                <p>
+                    La información que recopilamos puede utilizarse para mejorar tu experiencia en nuestro sitio web, mejorar el servicio al cliente, procesar transacciones, enviar correos electrónicos periódicos o administrar un concurso, promoción o encuesta.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Protección de la Información</h2>
+                <p>
+                    Implementamos una variedad de medidas de seguridad para mantener la seguridad de tu información personal. Utilizamos cifrado avanzado y políticas de seguridad rigurosas para proteger tu información contra el acceso no autorizado.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Compartir Información con Terceros</h2>
+                <p>
+                    No vendemos, intercambiamos ni transferimos tu información personal a terceros. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web, realizar nuestro negocio o prestarte servicios, siempre y cuando esas partes acuerden mantener esta información confidencial.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Consentimiento</h2>
+                <p>
+                    Al utilizar nuestro sitio, consientes nuestra política de privacidad.
+                </p>
+            </section>
+
+            <section class="mb-4">
+                <h2>Cambios en Nuestra Política de Privacidad</h2>
+                <p>
+                    Si decidimos cambiar nuestra política de privacidad, publicaremos esos cambios en esta página. Esta política fue modificada por última vez el 12/06/2024.
+                </p>
+            </section>
+
+            <section>
+                <h2>Contáctanos</h2>
+                <p>
+                    Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarnos utilizando la siguiente información:
+                </p>
+                <ul>
+                    <li><strong>Email:</strong> contacto@applazaro.com</li>
+                    <li><strong>Teléfono:</strong> 35161761716</li>
+                    <li><strong>Dirección:</strong> La Isla 4563, Cordoba, Argentina</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        /* Estilos específicos para la Política de Privacidad */
+        h1, h2 {
+            color: #007bff; /* Color azul consistente con el navbar */
+        }
+
+        hr {
+            border-top: 2px solid #007bff; /* Línea divisoria azul */
+        }
+
+        section {
+            background-color: #f8f9fa; /* Fondo gris claro para secciones */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none; /* Quitar viñetas */
+            padding-left: 0;
+        }
+
+            ul li::before {
+                content: "\2022"; /* Añadir viñeta */
+                color: #007bff; /* Color azul para viñetas */
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+    </style>
+}

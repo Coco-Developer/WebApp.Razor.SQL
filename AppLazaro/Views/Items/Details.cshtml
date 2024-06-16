@@ -1,0 +1,53 @@
+﻿@model AppLazaro.Models.Items
+
+@{
+    ViewData["Title"] = "Detalles del Item - AppLazaro";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Detalles del Item</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-secondary">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">Información del Item</h4>
+                </div>
+                <div class="card-body bg-light">G
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label font-weight-bold">ID</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-plaintext">@Model.ID</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label font-weight-bold">Nombre</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-plaintext">@Model.Nombre</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label font-weight-bold">Descripción</label>
+                        <div class="col-sm-9">
+                            <p class="form-control-plaintext">@Model.Descripcion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <a asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-warning">
+                        <i class="bi bi-pencil-square"></i> Editar
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left-circle"></i> Volver a la lista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Puedes agregar scripts adicionales aquí si es necesario
+    </script>
+}

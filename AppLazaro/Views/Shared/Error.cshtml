@@ -1,0 +1,68 @@
+﻿@model AppLazaro.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Error - AppLazaro";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="alert alert-danger text-center" role="alert">
+                <h1 class="text-danger display-4">Error</h1>
+                <h2 class="text-danger mb-4">Ocurrió un error mientras se procesaba tu solicitud.</h2>
+
+                @if (Model.ShowRequestId)
+                {
+                    <p>
+                        <strong>ID de la solicitud:</strong> <code>@Model.RequestId</code>
+                    </p>
+                }
+
+                <h3>Modo de Desarrollo</h3>
+                <p>
+                    Cambiar al entorno de <strong>Desarrollo</strong> mostrará información más detallada sobre el error que ocurrió.
+                </p>
+                <p>
+                    <strong>El entorno de Desarrollo no debe estar habilitado para aplicaciones en producción.</strong>
+                    Puede resultar en la visualización de información sensible de excepciones a los usuarios finales.
+                    Para depuración local, habilita el entorno de <strong>Desarrollo</strong> configurando la variable de entorno <strong>ASPNETCORE_ENVIRONMENT</strong> a <strong>Development</strong>
+                    y reiniciando la aplicación.
+                </p>
+
+                <div class="mt-4">
+                    <a href="javascript:history.back()" class="btn btn-secondary">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .alert-danger {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #dc3545; /* Color rojo consistente con alert-danger */
+        }
+
+        h3 {
+            color: #007bff; /* Color azul para diferenciación */
+        }
+
+        p {
+            color: #6c757d; /* Texto secundario en gris */
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5a6268;
+                border-color: #545b62;
+            }
+    </style>
+}

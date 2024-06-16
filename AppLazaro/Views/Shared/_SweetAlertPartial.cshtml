@@ -1,0 +1,11 @@
+﻿@if (TempData["SweetAlertMessage"] != null)
+{
+    <script>
+        Swal.fire({
+            icon: '@TempData["SweetAlertType"]',
+            title: '@TempData["SweetAlertMessage"]',
+            showConfirmButton: false,
+            timer: 2500 // Ajusta el tiempo según tus necesidades
+        });
+    </script>
+}
